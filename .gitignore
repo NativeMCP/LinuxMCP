@@ -1,0 +1,24 @@
+# Rust
+/target/
+**/target/
+Cargo.lock.bak
+*.pdb
+*.rs.bk
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local overrides (never committed; see CONTRIBUTING.md)
+/.cargo/config.local.toml
+/local/
+
+# Packaging
+/dist/
+*.deb
+*.rpm
+/packaging/build/

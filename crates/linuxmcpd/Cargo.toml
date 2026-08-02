@@ -1,0 +1,22 @@
+[package]
+name = "linuxmcpd"
+description = "systemd service host for the NativeMCP governed server."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "linuxmcpd"
+path = "src/main.rs"
+
+[dependencies]
+
+[dev-dependencies]

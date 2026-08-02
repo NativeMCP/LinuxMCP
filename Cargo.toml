@@ -1,0 +1,48 @@
+[workspace]
+resolver = "3"
+members = ["crates/linuxmcpd"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.97.1"
+license = "Apache-2.0"
+authors = ["Madewell R&D LLC"]
+repository = "https://github.com/NativeMCP/LinuxMCP"
+homepage = "https://github.com/NativeMCP"
+readme = "README.md"
+
+# `core` is consumed by pinned tag, never by branch. A floating dependency on
+# a shared governance crate means the policy engine can change underneath a
+# release without a review, which defeats the point of having one.
+#
+# The pin is set to the first `core` tag when it exists; until then these
+# entries are intentionally absent rather than pointed at a moving target.
+[workspace.dependencies]
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+missing_docs = "warn"
+unreachable_pub = "warn"
+rust_2018_idioms = { level = "warn", priority = -1 }
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+unwrap_used = "deny"
+expect_used = "deny"
+todo = "deny"
+unimplemented = "deny"
+unreachable = "deny"
+indexing_slicing = "deny"
+module_name_repetitions = "allow"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
+
+[profile.dev]
+debug = "line-tables-only"
