@@ -16,10 +16,23 @@ readme = "README.md"
 # a shared governance crate means the policy engine can change underneath a
 # release without a review, which defeats the point of having one.
 #
-# The pin is set to the first `core` tag when it exists; until then these
-# entries are intentionally absent rather than pointed at a moving target.
+# Pinned to core v0.1.0 (W1). Moving this pin is a reviewed change: read the
+# core release notes for what the new tag changed before bumping it, and
+# migrate to crates.io versions at 1.0 per D-5.
 [workspace.dependencies]
-
+nmcp-proto = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-transport = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-audit = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-identity = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-memory = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-policy = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-exec = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-fs = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-router = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-abac = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-devtools = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-inspector = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-schema = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
 [workspace.lints.rust]
 unsafe_code = "deny"
 missing_docs = "warn"
