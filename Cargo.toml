@@ -20,19 +20,19 @@ readme = "README.md"
 # core release notes for what the new tag changed before bumping it, and
 # migrate to crates.io versions at 1.0 per D-5.
 [workspace.dependencies]
-nmcp-proto = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-transport = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-audit = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-identity = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-memory = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-policy = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-exec = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-fs = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-router = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-abac = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-devtools = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-inspector = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
-nmcp-schema = { git = "https://github.com/NativeMCP/core", tag = "v0.1.0" }
+nmcp-proto = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-transport = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-audit = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-identity = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-memory = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-policy = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-exec = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-fs = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-router = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-abac = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-devtools = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-inspector = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
+nmcp-schema = { git = "https://github.com/NativeMCP/core", tag = "v0.2.0" }
 [workspace.lints.rust]
 unsafe_code = "deny"
 missing_docs = "warn"
